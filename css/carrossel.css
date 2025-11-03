@@ -1,0 +1,289 @@
+/* ==================== CARROSSEL INFINITO ==================== */
+.carrossel-infinito {
+  padding: 60px 0;
+  background: transparent;
+  overflow: hidden;
+}
+
+.carrossel-infinito .section-title h2 {
+  font-size: 2rem;
+  color: var(--cor-texto-escuro);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.carrossel-infinito .section-title p {
+  color: var(--cor-texto-claro);
+  font-size: 1rem;
+}
+
+/* Wrapper do carrossel - esconde o overflow */
+.carrossel-infinito-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+  position: relative;
+}
+
+/* Efeito de fade nas bordas (opcional - deixa mais bonito) */
+.carrossel-infinito-wrapper::before,
+.carrossel-infinito-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.carrossel-infinito-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--cor-fundo-claro), transparent);
+}
+
+.carrossel-infinito-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--cor-fundo-claro), transparent);
+}
+
+/* Track que contém todas as imagens */
+.carrossel-infinito-track {
+  display: flex;
+  gap: 20px;
+  width: fit-content;
+  animation: deslizar 30s linear infinite;
+}
+
+/* Pausa a animação quando passar o mouse (opcional) */
+.carrossel-infinito-track:hover {
+  animation-play-state: paused;
+}
+
+/* Animação de deslizar para a esquerda */
+@keyframes deslizar {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Cada item do carrossel */
+.carrossel-item {
+  flex-shrink: 0;
+  width: 280px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: var(--cor-branco); */
+  /* box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08); */
+  transition: all 0.3s ease;
+}
+
+.carrossel-item:hover {
+  transform: scale(1.1);
+  /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); */
+}
+
+/* Imagens dentro dos items */
+.carrossel-item img {
+  max-width: 100%;
+  /* max-height: 100%; */
+  object-fit: cover;
+  filter: grayscale(50%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  border-radius: 15px;
+}
+
+.carrossel-item:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .carrossel-infinito {
+    padding: 40px 0;
+  }
+
+  .carrossel-infinito-track {
+    gap: 30px;
+    animation-duration: 25s; /* Mais rápido em mobile */
+  }
+
+  .carrossel-item {
+    width: 280px;
+    height: 120px;
+    /* padding: 15px; */
+  }
+
+  .carrossel-infinito-wrapper::before,
+  .carrossel-infinito-wrapper::after {
+    width: 50px;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 576px) {
+  .carrossel-infinito-track {
+    gap: 20px;
+    animation-duration: 30s;
+  }
+
+  .carrossel-item {
+    width: 280px;
+    height: 120px;
+    /* padding: 10px; */
+  }
+}
+
+/* ==================== MODAL DE VISUALIZAÇÃO ==================== */
+.modal-imagem {
+  display: none; /* Escondido por padrão */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Fundo escuro do modal */
+.modal-imagem-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  cursor: pointer; /* Clica no fundo para fechar */
+}
+
+/* Container da imagem */
+.modal-imagem-conteudo {
+  position: relative;
+  max-width: 90%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+/* Botão de fechar */
+.modal-fechar {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+  border: none;
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 10001;
+}
+
+.modal-fechar:hover {
+  background-color: var(--cor-secundaria);
+  transform: scale(1.1);
+}
+
+/* Imagem expandida */
+.imagem-expandida {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+  animation: zoomIn 0.3s ease;
+}
+
+/* Legenda da imagem */
+.modal-legenda {
+  display: none;
+}
+
+/* Animação de fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animação de zoom in */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .modal-imagem-conteudo {
+    max-width: 95%;
+    max-height: 95vh;
+  }
+
+  .modal-fechar {
+    top: -40px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+  }
+
+  .imagem-expandida {
+    max-height: 70vh;
+  }
+
+  .modal-legenda {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

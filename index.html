@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Política de Referência -->
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Segurança adicional -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta
+      name="permissions-policy"
+      content="geolocation=(), microphone=(), camera=(), payment=()"
+    />
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="PowerTech | Assistência Técnica & Gráfica Rápida - Soluções completas em impressão, brindes, personalizados e manutenção de PCs e Notebooks em Salvador/BA."
+    />
+    <meta
+      name="keywords"
+      content="PowerTech, gráfica rápida, impressão, assistência técnica, manutenção de notebooks, PCs, brindes personalizados, Salvador, Pernambués, tecnologia"
+    />
+    <meta name="author" content="PowerTech" />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+
+    <!-- Open Graph / Redes Sociais -->
+    <meta
+      property="og:title"
+      content="PowerTech | Assistência Técnica & Gráfica Rápida"
+    />
+    <meta
+      property="og:description"
+      content="Soluções completas em impressão, brindes e manutenção de PCs e Notebooks em Salvador/BA."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://powertech.com.br" />
+
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Preconnect (performance) -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://www.google.com" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <title>PowerTech | Assistência Técnica & Gráfica Rápida</title>
+
+    <link
+      rel="shortcut icon"
+      href="assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/carrossel.css" />
+  </head>
+  <body>
+    <!-- ==================== NAVEGAÇÃO ==================== -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <!-- Logo/Nome da empresa -->
+        <a class="navbar-brand" href="#home">
+          <img
+            class="logo"
+            src="assets/img/logo-powertech.png"
+            alt="Logo PowerTech"
+            loading="eager"
+          />
+          <!-- <i class="bi bi-printer"></i> PowerTech -->
+        </a>
+
+        <!-- Botão mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu de navegação -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicos">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <!-- Status aberto/fechado - atualizado automaticamente -->
+              <span id="statusBadge" class="status-badge">
+                <i class="bi bi-clock"></i>
+                <span id="statusText">Verificando...</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ==================== SEÇÃO HERO (BANNER PRINCIPAL) ==================== -->
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Assistência Técnica e Gráfica Rápida</h1>
+        <p>Soluções completas em impressão e manutenção de computadores</p>
+        <a href="https://wa.me/5571987193409" class="btn-hero">
+          <i class="bi bi-whatsapp"></i> Entre em Contato
+        </a>
+      </div>
+    </section>
+
+    <!-- ==================== SEÇÃO SOBRE NÓS ==================== -->
+
+    <section id="sobre" class="sobre">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h2>Sobre a PowerTech</h2>
+            <p>
+              Com anos de experiência no mercado, a PowerTech oferece soluções
+              completas para empresas e pessoas físicas. Nossa missão é entregar
+              qualidade, agilidade e preços justos.
+            </p>
+            <p>
+              Combinamos serviços gráficos de primeira linha com assistência
+              técnica especializada, tornando-se seu parceiro completo para
+              todas as necessidades de impressão e informática.
+            </p>
+            <ul class="sobre-features">
+              <li>
+                <i class="bi bi-lightning-charge-fill"></i>
+                <strong>Atendimento Rápido</strong>
+              </li>
+              <li>
+                <i class="bi bi-shield-check"></i>
+                <strong>Garantia de Qualidade</strong>
+              </li>
+              <li>
+                <i class="bi bi-cash-coin"></i>
+                <strong>Preços Competitivos</strong>
+              </li>
+              <li>
+                <i class="bi bi-people-fill"></i>
+                <strong>Equipe Especializada</strong>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="assets/img/powertech-interno.jpg"
+              alt="Powertech Interno"
+              class="img-fluid rounded shadow"
+              style="max-height: 500px; object-fit: cover; width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SEÇÃO DE SERVIÇOS ==================== -->
+    <section id="servicos" class="servicos">
+      <div class="container">
+        <div class="section-title">
+          <h2>Nossos Serviços</h2>
+          <p>Qualidade e agilidade para o seu serviço</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Serviço 1: Assistência Técnica -->
+          <div class="col-md-6 col-lg-3">
+            <div class="servico-card">
+              <i class="bi bi-laptop servico-icon"></i>
+              <h3>Assistência Técnica</h3>
+              <p>Manutenção especializada</p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> Notebooks</li>
+                <li><i class="bi bi-check-circle-fill"></i> PCs Desktop</li>
+                <li><i class="bi bi-check-circle-fill"></i> Formatação</li>
+                <li><i class="bi bi-check-circle-fill"></i> Upgrade</li>
+                <li><i class="bi bi-check-circle-fill"></i> Limpeza</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Serviço 2: Impressões -->
+          <div class="col-md-6 col-lg-3">
+            <div class="servico-card">
+              <i class="bi bi-printer-fill servico-icon"></i>
+              <h3>Impressões</h3>
+              <p>Qualidade profissional</p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> Colorido</li>
+                <li><i class="bi bi-check-circle-fill"></i> Preto e Branco</li>
+                <li><i class="bi bi-check-circle-fill"></i> Grande formato</li>
+                <li><i class="bi bi-check-circle-fill"></i> Documentos</li>
+                <li><i class="bi bi-check-circle-fill"></i> Apostilas</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Serviço 3: Brindes -->
+          <div class="col-md-6 col-lg-3">
+            <div class="servico-card">
+              <i class="bi bi-gift-fill servico-icon"></i>
+              <h3>Brindes</h3>
+              <p>Para sua empresa</p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> Canetas</li>
+                <li><i class="bi bi-check-circle-fill"></i> Canecas</li>
+                <li><i class="bi bi-check-circle-fill"></i> Chaveiros</li>
+                <li><i class="bi bi-check-circle-fill"></i> Ecobags</li>
+                <li><i class="bi bi-check-circle-fill"></i> Agendas</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Serviço 4: Personalizados -->
+          <div class="col-md-6 col-lg-3">
+            <div class="servico-card">
+              <i class="bi bi-palette-fill servico-icon"></i>
+              <h3>Personalizados</h3>
+              <p>Do seu jeito</p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> Camisetas</li>
+                <li><i class="bi bi-check-circle-fill"></i> Adesivos</li>
+                <li><i class="bi bi-check-circle-fill"></i> Banners</li>
+                <li><i class="bi bi-check-circle-fill"></i> Cartões</li>
+                <li><i class="bi bi-check-circle-fill"></i> Convites</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="carrossel-infinito">
+        <!-- Container do carrossel -->
+        <div class="carrossel-infinito-wrapper">
+          <div class="carrossel-infinito-track" id="carrosselTrack">
+            <!-- As imagens serão inseridas aqui via JavaScript -->
+            <!-- Elas serão duplicadas automaticamente para criar o efeito infinito -->
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ==================== MODAL PARA VISUALIZAR IMAGEM ==================== -->
+    <div class="modal-imagem" id="modalImagem">
+      <div class="modal-imagem-overlay"></div>
+      <div class="modal-imagem-conteudo">
+        <button class="modal-fechar" id="btnFecharModal" aria-label="Fechar">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        <img src="" alt="" id="imagemExpandida" class="imagem-expandida" />
+        <p class="modal-legenda" id="legendaImagem"></p>
+      </div>
+    </div>
+
+    <!-- ==================== SEÇÃO DE DEPOIMENTOS ==================== -->
+    <section id="depoimentos" class="depoimentos">
+      <div class="container">
+        <div class="section-title">
+          <h2>Depoimentos</h2>
+          <p>Veja o que nossos clientes dizem sobre nós</p>
+        </div>
+
+        <!-- Os depoimentos serão inseridos aqui dinamicamente -->
+        <div id="depoimentosContainer" class="g-4">
+          <!-- Conteúdo gerado via JavaScript -->
+        </div>
+
+        <!-- Estatísticas de satisfação -->
+        <div class="depoimentos-stats mt-5">
+          <div class="row text-center" id="statsContainer">
+            <!-- Estatísticas geradas via JavaScript -->
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="depoimentos-cta text-center mt-5" id="ctaContainer">
+          <!-- CTA gerado via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SEÇÃO DE CONTATO ==================== -->
+    <section id="contato" class="contato">
+      <div class="container">
+        <div class="section-title">
+          <h2>Entre em Contato</h2>
+          <p>Estamos prontos para atender você</p>
+          <div class="social-links">
+            <a
+              href="https://www.instagram.com/powertech414/"
+              title="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a
+              href="https://wa.me/5571987193409"
+              title="WhatsApp"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+            >
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a
+              href="https://www.threads.com/@powertech414?xmt=AQF0Ciw0e2wVWQG6sBUuYJjP7pjyThUrvlGvctSdTa-DWz4"
+              title="Threads"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Threads"
+            >
+              <i class="bi bi-threads"></i>
+            </a>
+          </div>
+        </div>
+
+        <div id="contato-info-e-mapa" class="row g-4">
+          <div class="col-lg-6">
+            <div class="contato-info">
+              <div class="contato-item">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div>
+                  <h4>Endereço</h4>
+                  <p>
+                    Rua Thomaz Gonzaga, 400<br />
+                    Pernambués, Salvador/BA, 41130-000
+                  </p>
+                </div>
+              </div>
+
+              <div class="contato-item">
+                <i class="bi bi-telephone-fill"></i>
+                <div>
+                  <h4>Telefone</h4>
+                  <p>
+                    <a
+                      href="https://wa.me/5571987193409"
+                      rel="noopener noreferrer"
+                      >(71) 9 8719-3409</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="contato-item">
+                <i class="bi bi-envelope-fill"></i>
+                <div>
+                  <h4>E-mail</h4>
+                  <p>
+                    <a
+                      href="mailto:contato@graficarapida.com.br"
+                      rel="noopener noreferrer"
+                      >contato@graficarapida.com.br</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="contato-item">
+                <i class="bi bi-clock-fill"></i>
+                <div>
+                  <h4>Horário de Funcionamento</h4>
+                  <p id="horarioTexto">
+                    Seg - Sex: 8h às 18h<br />
+                    Sáb: 8h às 12h
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="contato-mapa">
+              <h3>Nossa Localização</h3>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0030532536143!2d-38.462317924820525!3d-12.971656187343667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161ae1bfac0b3f%3A0x3ddd8e283a530453!2sRua%20Thomaz%20Gonzaga%2C%20400%20-%20Pernambu%C3%A9s%2C%20Salvador%20-%20BA%2C%2041130-000!5e0!3m2!1spt-BR!2sbr!4v1762044289217!5m2!1spt-BR!2sbr"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Localização no Google Maps"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <!-- Sobre a empresa -->
+          <div class="footer-section">
+            <h4><i class="bi bi-printer"></i> Gráfica Rápida</h4>
+            <p>
+              Sua parceira completa em soluções gráficas e assistência técnica.
+              Qualidade e agilidade que seu negócio merece.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com/powertech414/"
+                title="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="https://wa.me/5571987193409"
+                title="WhatsApp"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+              <a
+                href="https://www.threads.com/@powertech414?xmt=AQF0Ciw0e2wVWQG6sBUuYJjP7pjyThUrvlGvctSdTa-DWz4"
+                title="Threads"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="bi bi-threads"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Links rápidos -->
+          <div class="footer-section">
+            <h4>Links Rápidos</h4>
+            <a href="#home">Início</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+          </div>
+
+          <!-- Serviços -->
+          <div class="footer-section">
+            <h4>Serviços</h4>
+            <a href="#servicos">Assistência Técnica</a>
+            <a href="#servicos">Impressões</a>
+            <a href="#servicos">Brindes</a>
+            <a href="#servicos">Personalizados</a>
+          </div>
+
+          <!-- Contato -->
+          <div class="footer-section">
+            <h4>Contato</h4>
+            <p><i class="bi bi-whatsapp"></i> (71) 9 8719-3409</p>
+            <p><i class="bi bi-envelope"></i> contato@graficarapida.com.br</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 PowerTech. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/depoimentos.js" defer></script>
+    <script src="js/carrossel.js" defer></script>
+  </body>
+</html>
