@@ -16,7 +16,7 @@ Site responsivo e otimizado desenvolvido para apresentar os serviços da PowerTe
 
 ## 🖥 Preview
 <img width="1423" height="786" alt="image" src="https://github.com/user-attachments/assets/2a7f86cc-cebc-4e19-a0df-657710e9c464" />
-[Visualizar Projeto](https://1faeell.github.io/powertech-assistencia-grafica)
+Ver projeto: https://1faeell.github.io/powertech-assistencia-grafica
 
 
 ## 🛠️ Tecnologias Utilizadas

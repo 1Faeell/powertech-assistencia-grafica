@@ -132,9 +132,17 @@ body {
 }
 
 .sobre-content {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
+  background: linear-gradient(
+    to bottom,
+    var(--cor-fundo-claro) 0%,
+    #e8eef5 100%
+  );
+  padding: 2rem;
+  gap: 1rem;
+}
+
+#sobreInfo {
+  border-radius: 5px;
 }
 
 .sobre h2 {
@@ -873,6 +881,7 @@ footer {
 
   .sobre-features {
     justify-items: center;
+    margin-bottom: 2rem;
   }
 }
 
